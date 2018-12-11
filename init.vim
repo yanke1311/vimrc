@@ -12,8 +12,8 @@ set autoindent
 set smartindent
 set expandtab
 set tabstop =2
-set softtabstop =4
-set shiftwidth =4
+set softtabstop =2
+set shiftwidth =2
 set shiftround
 
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
@@ -26,7 +26,9 @@ set backspace =indent,eol,start
 set hidden
 set laststatus =2   "always show statusline
 set display =lastline   "show as much as possible of the last line
+set ruler "状态栏中显示当前鼠标位置
 
+set showmatch "括号匹配
 set showmode  "show current mode in command-line
 set showcmd   "show already typed keys when more are expected
 
@@ -52,7 +54,8 @@ else
 endif
 
 set mouse=nv
-
+set paste "鼠标粘贴不会改格式
+set listchars=tab:>-,trail:- "显示空格和tab键
 
 set shell=/bin/zsh
 
